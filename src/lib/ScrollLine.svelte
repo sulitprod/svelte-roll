@@ -1,24 +1,17 @@
 <script lang="ts">
 	import { createEventDispatcher, onMount } from 'svelte';
-	import { fade, type TransitionConfig } from 'svelte/transition';
-
-	interface Imargin {
-		top?: number;
-		right?: number;
-		bottom?: number;
-		left?: number;
-	}
-	type Transition = (node: HTMLElement, params?: any) => TransitionConfig;
+	import { fade } from 'svelte/transition';
+	import type { IMargin, TTransition } from './types.js';
 
 	export let viewport: Element;
 	export let contents: Element;
 	export let hideAfter = 1000;
 	export let alwaysVisible = false;
 	export let initiallyVisible = false;
-	export let margin: Imargin = {};
+	export let margin: IMargin = {};
 
-	export let fadeIn: Transition = (node) => fade(node, { duration: 100 });
-	export let fadeOut: Transition = (node) => fade(node, { duration: 300 });
+	export let fadeIn: TTransition = (node) => fade(node, { duration: 100 });
+	export let fadeOut: TTransition = (node) => fade(node, { duration: 300 });
 
 	const dispatch = createEventDispatcher();
 
