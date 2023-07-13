@@ -1,6 +1,6 @@
 {
 	"name": "svelte-roll",
-	"version": "0.0.1",
+	"version": "0.0.2",
 	"author": "sulitprod",
 	"description": "Custom scroll for svelte",
 	"scripts": {
