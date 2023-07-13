@@ -1,0 +1,11 @@
+{
+	"editor.defaultFormatter": "esbenp.prettier-vscode",
+	"editor.formatOnSave": true,
+	"editor.codeActionsOnSave": {
+		"source.fixAll": true,
+		"source.organizeImports": true
+	},
+	"editor.tabSize": 3,
+	"editor.wordWrap": "on",
+	"typescript.tsdk": "./node_modules/typescript/lib"
+}
