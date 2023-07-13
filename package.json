@@ -1,6 +1,8 @@
 {
-	"name": "svelte-scroll",
+	"name": "svelte-roll",
 	"version": "0.0.1",
+	"author": "sulitprod",
+	"description": "Custom scroll for svelte",
 	"scripts": {
 		"dev": "vite dev",
 		"build": "vite build && npm run package",
@@ -46,5 +48,18 @@
 	},
 	"svelte": "./dist/index.js",
 	"types": "./dist/index.d.ts",
-	"type": "module"
+	"type": "module",
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/sulitprod/svelte-roll.git"
+	},
+	"keywords": [
+		"scroll",
+		"svelte"
+	],
+	"license": "ISC",
+	"bugs": {
+		"url": "https://github.com/sulitprod/svelte-roll/issues"
+	},
+	"homepage": "https://github.com/sulitprod/svelte-roll#readme"
 }
