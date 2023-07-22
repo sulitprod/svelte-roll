@@ -13,7 +13,10 @@
 	export let fadeIn: TTransition = (node) => fade(node, { duration: 100 });
 	export let fadeOut: TTransition = (node) => fade(node, { duration: 300 });
 
-	const dispatch = createEventDispatcher();
+	const dispatch = createEventDispatcher<{
+		hide: null;
+		show: null;
+	}>();
 
 	let startTop = 0;
 	let startY = 0;
